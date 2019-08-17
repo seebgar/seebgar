@@ -1,0 +1,258 @@
+/* VARIABLES */
+:root {
+  --bg-dark: rgb(50, 50, 50);
+  --bg-light: rgb(245, 245, 245);
+
+  --pink: rgb(252, 40, 252);
+  --blue: rgb(45, 255, 254);
+  --yellow: rgb(255, 253, 56);
+}
+
+/* ==========================================================================  */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+small {
+  font-size: 80%;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================  */
+
+a:hover {
+  text-decoration: underline solid white;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a:hover {
+  text-decoration: underline solid white;
+}
+
+
+.ContextContainer {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-dark);
+  color: white;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.MenuBarSmall {
+  height: 100vh;
+  width: 100%;
+}
+
+.MenuItemSmall {
+  color: white;
+  font-size: 46px;
+  text-decoration: none;
+}
+
+.MenuBar {
+  padding-top: 1em;
+}
+
+.MenuItem {
+  color: white;
+  font-size: 26px;
+  margin-right: 3em;
+  text-decoration: none;
+}
+
+.ItemSelected {
+  text-decoration: underline solid white;
+}
+
+p {
+  counter-reset: var(--bg-dark);
+}
+
+
+
+.BaseCard {
+  background-color: var(--bg-light);
+  min-height: 50vh;
+  width: 65%;
+  border-radius: 1em;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+#MAC {
+  right: -20em;
+}
+
+.PERIS {
+  right: -10em;
+}
+
+.PERIS2 {
+  right: -10em;
+  width: 150px;
+}
+
+
+
+@media only screen and (max-width: 960px) {
+  /* For mobile phones: */
+  .MenuItem {
+    color: white;
+    font-size: 18px;
+    margin-right: 1em;
+  }
+
+  .MainTitle {
+    font-size: 45px;
+  }
+
+  /* ABOUT */
+
+  #Intro {
+    font-size: 26px;
+  }
+  #CardName, #CardNameContact {
+    font-size: 58px;
+  }
+  .BaseCard, .BaseCardColor {
+    min-height: 40vh;
+  }
+  #AnimojiCard, #ContactCard {
+    width: 65%;
+  }
+  .ContactItem {
+    font-size: 18px;
+  }
+
+
+  /* HOBBIES */
+  .FloatingImg, #MAC {
+    right: -5em;
+  }
+
+  .HobbieCard {
+    height: 50vh;
+  }
+
+  /* EXPERIENCE */
+
+  .PERIS2 {
+    display: none;
+  }
+
+}
+
+
+.FooterMenuItem {
+  color: var(--bg-light);
+  text-decoration: none;
+}
+
+
+
+@media only screen and ( min-width: 960px ) and ( max-width: 1300px ) {
+  /* For tablets: */
+  
+  /* EXPERIENCE */
+
+  .PERIS2 {
+    display: none;
+  }
+  #MAC {
+    width: 450px;
+  }
+
+  /* HOBBIES */
+  .FloatingImg, #MAC {
+    right: -13em;
+    width: 500px;
+  }
+
+  .HobbieCard {
+    height: 50vh;
+  }
+}
