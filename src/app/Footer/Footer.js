@@ -43,7 +43,7 @@ export default function Footer() {
         <div className="uk-width-1-1@s uk-width-1-3@m uk-width-1-3@l">
           <p className="FooterMenuItem">Credits:</p>
           <a
-            href="https://codepen.io/matchboxhero/pen/LzdgOv?editors=1100"
+            href="https://codepen.io/bh"
             id="Location"
             target="_blank"
             rel="noopener noreferrer"
@@ -65,6 +65,14 @@ export default function Footer() {
             rel="noopener noreferrer"
           >
           <p className="FooterMenuItem">Unsplash</p>
+          </a>
+          <a
+            href="https://github.com/facebook/create-react-app"
+            id="Location"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          <p className="FooterMenuItem">Create React App</p>
           </a>
         </div>
 

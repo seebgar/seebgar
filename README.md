@@ -1,68 +1,61 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Proyecto 1
+Programación con tecnologías web
+Ingeniería de Sistemas y Computación
+Universidad de Los Andes
 
-## Available Scripts
+Sebastian García
+201630047
+js.garcial1
+https://seebgar.herokuapp.com
 
-In the project directory, you can run:
 
-### `npm start`
+## Desarrollo
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+La siguiente página web se desarrolló a apartir del template inicial generado por **Create React App**. Utilicé React para tener control sobre el estado de la página y de esta forma lograr algunas animaciones deseadas. 
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Con respecto al diseño del sitio web, utilicé el framework de CSS: **UIkit**, y no Boostrap. A pesar de ser considerado como HTML, CSS y JS simple y flexible para componentes e interacciones de UI, considero que Bootstrap es un limitante para alguien que considera modificar los componentes CSS/LESS. Sin embargo, la "capacidad de respuesta" es la razón principal por la que los desarrolladores consideran Bootstrap sobre los competidores. Bootstrap también está implementado siguiendo las normas de "mobile first application" por lo que cuenta con una gran ventaja al momento de ser desplegada ya que los Motores de Optimización de Búsqueda (SEO por sus siglas en inglés) prefieren a los sitios web que garantizan un buen despliegue en dispositivos móviles. Esto no significa que los demás alternativas a Bootstrap será causantes de malos resultados de SEO. Lo que sí implica es tener mayor cuidado al momento de desarrollar cada componente web para garantizar su optima renderización en un dispositivo móvil. 
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+|           [Bootstrap vs. UIKit](https://stackshare.io/stackups/bootstrap-vs-uikit)     |     [UIKit](https://getuikit.com/docs/introduction)                   |  [Boostrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/)                        |
+|----------------|-------------------------------|-------------|
+     
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Fuentes de referencia
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+> Starter Template
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[Create React App](https://create-react-app.dev/docs/getting-started)
 
-### `npm run eject`
+> Free stock images
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+[Pexels](https://www.pexels.com)
+[Unsplash](https://unsplash.com)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> Bubbles animation
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Author: [Ben Hudson @ Code Pen](https://codepen.io/bh)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Herramientas utilizdas
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> Desarrollo del sitio web
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[Visual Code](https://code.visualstudio.com)
+[Yarn](https://yarnpkg.com/en/)
 
-### Code Splitting
+> Edición de vectores, SVG e imagenes
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+[Illustrator](https://www.adobe.com/products/illustrator.html) 
+[Photoshop](https://www.adobe.com/products/photoshop.html)
 
-### Analyzing the Bundle Size
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## Despliegue
 
-### Making a Progressive Web App
+> Heroku Server
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+[Home Page](https://seebgar.herokuapp.com) desplegado por medio de [Heroku](https://www.heroku.com/).
 
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+> Local
+> $ yarn install # or npm install
+> $ yarn start # or npm start
