@@ -4,7 +4,7 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 
 import BOG from "../../assets/BOG.jpg";
 import FACE from "../../assets/FACE.png";
-import NIGHT from "../../assets/NIGHT.JPG";
+import NIGHT from "../../assets/NIGHT.jpg";
 import Menu from "../Menu/Menu";
 
 class About extends React.Component {

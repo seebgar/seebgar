@@ -1,6 +1,6 @@
 import React from "react";
 
-import NIGHT from "../../assets/ANDES1.jpg";
+import NIGHT from "../../assets/NIGHT.jpg";
 import Menu from "../Menu/Menu";
 
 export default class Skills extends React.Component {
