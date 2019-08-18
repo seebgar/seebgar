@@ -1,11 +1,11 @@
 # Proyecto 1
-Programación con tecnologías web
-Ingeniería de Sistemas y Computación
-Universidad de Los Andes
-
-Sebastian García
-201630047
-js.garcial1
+Programación con tecnologías web<br/>
+Ingeniería de Sistemas y Computación<br/>
+Universidad de Los Andes<br/>
+<br/>
+Sebastian García<br/>
+201630047<br/>
+js.garcial1<br/>
 https://seebgar.herokuapp.com
 
 
