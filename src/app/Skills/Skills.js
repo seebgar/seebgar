@@ -62,7 +62,6 @@ export default function Skills() {
             <p className="ProjectText">C++</p>
             <p className="ProjectText">Node</p>
             <p className="ProjectText">.Net</p>
-            <p className="ProjectText">&nbsp;</p>
             <p className="ProjectText" style={{ lineHeight: "1em" }}>
               Oracle SQL Dev
             </p>
