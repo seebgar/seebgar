@@ -13,7 +13,6 @@ import Hobbies from "../Hobbies/Hobbies";
 import Education from "../Education/Education";
 import Experience from "../Experience/Experience";
 import Skills from "../Skills/Skills";
-import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer"
 
 function App() {
@@ -29,8 +28,6 @@ function App() {
           <Route path="/education" component={Education} />
           <Route path="/experience" component={Experience} />
           <Route path="/skills" component={Skills} />
-
-          <Route path="/contact" component={Contact} />
 
           <Route exact path="/" component={Home} />
         </Switch>

@@ -12,6 +12,7 @@ class Home extends React.Component {
   }
 
   componentDidMount() {
+    window.scrollTo(0, 0);
     window.onscroll = function() {
       //console.log(window.pageYOffset);
       if (window.pageYOffset >= 150 && window.pageYOffset <= 940) {
@@ -134,7 +135,7 @@ class Home extends React.Component {
           style={{ height: "100vh" }}
         >
           <div>
-            <h1 className="MainTitle">sebastian garcía</h1>
+            <h1 className="MainTitle">sebastian garcia</h1>
           </div>
 
           <br />
@@ -250,6 +251,7 @@ class Home extends React.Component {
             </div>
           </div>
         </div>
+        <div id="HomeMobileBottomMargin">&nbsp;</div>
       </div>
     );
   }

@@ -176,10 +176,20 @@ p {
   width: 150px;
 }
 
+video {
+  border-radius: 1em;
+}
+
+
 
 
 @media only screen and (max-width: 960px) {
   /* For mobile phones: */
+
+  #HomeMobileBottomMargin {
+    height: 90vh;
+  }
+
   .MenuItem {
     color: white;
     font-size: 18px;
@@ -214,6 +224,11 @@ p {
     right: -5em;
   }
 
+  .ExtraLg {
+    width: 220px;
+    right: -5em;
+  }
+
   .HobbieCard {
     height: 50vh;
   }
@@ -227,6 +242,13 @@ p {
 }
 
 
+footer {
+  margin-top: 25vh;
+  background: rgba(55, 55, 55, 1);
+  color: white;
+  font-family: "Inconsolata", sans-serif;
+}
+
 .FooterMenuItem {
   color: var(--bg-light);
   text-decoration: none;
@@ -236,6 +258,14 @@ p {
 
 @media only screen and ( min-width: 960px ) and ( max-width: 1300px ) {
   /* For tablets: */
+
+  #HomeMobileBottomMargin {
+    height: 70vh;
+  }
+
+  .ContactItem {
+    font-size: 24px;
+  }
   
   /* EXPERIENCE */
 
@@ -250,6 +280,11 @@ p {
   .FloatingImg, #MAC {
     right: -13em;
     width: 500px;
+  }
+
+  .ExtraLg {
+    width: 300px;
+    right: -26em;
   }
 
   .HobbieCard {

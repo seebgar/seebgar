@@ -77,12 +77,6 @@ body {
   height: 100%;
 }
 
-footer {
-  margin-top: 80vh;
-  background: rgba(55, 55, 55, 1);
-  color: white;
-  font-family: "Inconsolata", sans-serif;
-}
 
 .Content {
   min-height: 70vh;

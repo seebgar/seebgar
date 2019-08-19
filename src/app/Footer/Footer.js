@@ -32,12 +32,31 @@ export default function Footer() {
         <div className="uk-width-1-1@s uk-width-1-3@m uk-width-1-3@l">
           <p className="FooterMenuItem">js.garcial1@uniandes.edu.co</p>
           <p className="FooterMenuItem">+57 (320) 805 1317</p>
-          <p className="FooterMenuItem">Github @ seebgar</p>
-          <p className="FooterMenuItem">Instagram @ seebgar</p>
+          <p className="FooterMenuItem">
+          Github @&nbsp; 
+          <a
+                href="https://github.com/seebgar"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{color: 'white'}}
+              >
+                seebgar
+              </a></p>
+          <p className="FooterMenuItem">
+          Instagram @&nbsp; 
+          <a
+                href="https://www.instagram.com/seebgar/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{color: 'white'}}
+              >
+                seebgar
+              </a>
+          </p>
           <br />
           <br />
           <p className="FooterMenuItem">
-            Born &amp; Raised in Bogotá, Colombia
+            Born &amp; Raised<br/>Bogotá
           </p>
         </div>
         <div className="uk-width-1-1@s uk-width-1-3@m uk-width-1-3@l">
@@ -49,22 +68,6 @@ export default function Footer() {
             rel="noopener noreferrer"
           >
           <p className="FooterMenuItem">Bubbles Animation</p>
-          </a>
-          <a
-            href="https://www.pexels.com/"
-            id="Location"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-          <p className="FooterMenuItem">Pexels</p>
-          </a>
-          <a
-            href="https://unsplash.com/"
-            id="Location"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-          <p className="FooterMenuItem">Unsplash</p>
           </a>
           <a
             href="https://github.com/facebook/create-react-app"
