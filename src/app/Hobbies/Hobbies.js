@@ -7,6 +7,11 @@ import NES from "../../assets/NES.png";
 import PLANE from "../../assets/PLANE.png";
 import HP from "../../assets/HP.png";
 
+import EVEREST from "../../assets/AUDIO/EVEREST.mp3";
+import MEX from "../../assets/AUDIO/MEX.mp3";
+import INTRO from "../../assets/AUDIO/INTRO.mp3";
+
+
 import "./Hobbies.css";
 import Menu from "../Menu/Menu";
 
@@ -242,20 +247,37 @@ export default function Hobbies() {
           <div>
             <h3 className="ProjectName" style={{ textAlign: "right" }}>
               Music
+              <p
+                style={{
+                  textDecoration: "none",
+                  fontSize: "18px",
+                  color: "gray"
+                }}
+              >
+                playlist
+              </p>
             </h3>
           </div>
           <div>
-            <table class="uk-table" style={{width: '40%'}}>
-              <caption>Playlist</caption>
-
+            <table class="uk-table">
               <tbody>
                 <tr>
-                  <td>Table Data</td>
-                  <td>Table Data</td>
+                  <td>Mount Everest - Labrinth</td>
+                  <td>
+                    <audio controls src={EVEREST} />
+                  </td>
                 </tr>
                 <tr>
-                  <td>Table Data</td>
-                  <td>Table Data</td>
+                  <td>Mexican Jackpot - Flagship</td>
+                  <td>
+                  <audio controls src={MEX} />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Intro - The xx</td>
+                  <td>
+                  <audio controls src={INTRO} />
+                  </td>
                 </tr>
               </tbody>
             </table>
