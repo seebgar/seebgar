@@ -7,8 +7,9 @@ import "./index.scss";
 class Home extends React.Component {
   constructor(props) {
     super(props);
+    const isFirefox = typeof InstallTrigger !== 'undefined'; 
 
-    this.state = { scroll: 0 };
+    this.state = { scroll: 0, isFirefox };
   }
 
   componentDidMount() {
@@ -144,10 +145,11 @@ class Home extends React.Component {
           <div className="DownArrow" style={{ display: "block" }}>
             <div style={{ height: "10vh" }}>&nbsp;</div>
             <ion-icon
-              style={{ fontSize: "36px", color: "rgb(50, 50, 50)" }}
+              style={{ fontSize: "36px", color: "rgba(50, 50, 50,0)" }}
               name="arrow-down"
             />
-            <svg
+            {!this.state.isFirefox ?
+              <svg
               version="1.1"
               id="Layer_1"
               xmlns="http://www.w3.org/2000/svg"
@@ -176,7 +178,11 @@ class Home extends React.Component {
                   </g>
                 </g>
               </g>
-            </svg>
+            </svg> :  <ion-icon
+              style={{ fontSize: "36px", color: "white" }}
+              name="arrow-down" id="ArrowAnim"
+            />}
+            
           </div>
         </div>
 

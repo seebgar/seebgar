@@ -54,6 +54,21 @@ body {
 }
 
 
+#ArrowAnim {
+  animation: arrowanim 6s ease 0s infinite alternate; /*name duration timing delay iteration direction*/
+}
+
+@keyframes arrowanim {
+  0% {
+    transform: translatey(0px)
+  }
+  50% {
+    transform: translateY(-30px)
+  }
+  100% {
+    transform: translatey(0px)
+  }
+}
 
 
 .MainContainer {
