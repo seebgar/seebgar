@@ -8,9 +8,8 @@ import PLANE from "../../assets/PLANE.png";
 import HP from "../../assets/HP.png";
 
 import EVEREST from "../../assets/AUDIO/EVEREST.mp3";
-import MEX from "../../assets/AUDIO/MEX.mp3";
-import INTRO from "../../assets/AUDIO/INTRO.mp3";
-
+import DEFILER from "../../assets/AUDIO/DEFILER.mp3";
+import MAC from "../../assets/AUDIO/MAC.mp3";
 
 import "./Hobbies.css";
 import Menu from "../Menu/Menu";
@@ -262,21 +261,60 @@ export default function Hobbies() {
             <table class="uk-table">
               <tbody>
                 <tr>
-                  <td>Mount Everest - Labrinth</td>
+                  <td>
+                  <a
+                      href="https://youtu.be/kwrYDTHKxiE"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="MenuItem"
+                      style={{
+                        fontSize: "18px",
+                        color: "rgb(245, 245, 245)"
+                      }}
+                    >
+                      Mount Everest - Labrinth
+                    </a>
+                  </td>
                   <td>
                     <audio controls src={EVEREST} />
                   </td>
                 </tr>
                 <tr>
-                  <td>Mexican Jackpot - Flagship</td>
                   <td>
-                  <audio controls src={MEX} />
+                  <a
+                      href="https://youtu.be/N29-54dhVHg"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="MenuItem"
+                      style={{
+                        fontSize: "18px",
+                        color: "rgb(245, 245, 245)"
+                      }}
+                    >
+                      Weekend - Mac Miller
+                    </a>
+                  </td>
+                  <td>
+                    <audio controls src={MAC} />
                   </td>
                 </tr>
                 <tr>
-                  <td>Intro - The xx</td>
                   <td>
-                  <audio controls src={INTRO} />
+                    <a
+                      href="https://youtu.be/CGJAkyTgwi8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="MenuItem"
+                      style={{
+                        fontSize: "18px",
+                        color: "rgb(245, 245, 245)"
+                      }}
+                    >
+                      Defiler - Stromae
+                    </a>
+                  </td>
+                  <td>
+                    <audio controls src={DEFILER} />
                   </td>
                 </tr>
               </tbody>

@@ -136,10 +136,10 @@ export default function Experience() {
               <strong>Software Development</strong>
               <br />
               The course projects consisted of web applications (front and
-              backend) implementing Angular 7 and Java EE, deployed through
-              local servers (Payara). Full stack applications developing APIs
+              backend) developed in Angular 7 and Java EE, deployed through
+              local servers (Payara). Full stack applications with APIs
               and RESTful services was the main hub. Every single project was
-              monitored through Jenkins, SonarQube and Teamwork.
+              tracked through Jenkins, SonarQube and Teamwork.
             </p>
           </div>
           <div>&nbsp;</div>
