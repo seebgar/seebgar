@@ -150,7 +150,7 @@ class Home extends React.Component {
               style={{ fontSize: "36px", color: "rgba(50, 50, 50,0)" }}
               name="arrow-down"
             />
-            {!this.state.isFirefox || this.state.isEdge || this.state.isIE ? (
+            {!this.state.isFirefox || !this.state.isEdge || !this.state.isIE ? (
               <svg
                 version="1.1"
                 id="Layer_1"
