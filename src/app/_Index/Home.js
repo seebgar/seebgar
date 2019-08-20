@@ -11,7 +11,7 @@ class Home extends React.Component {
     const isIE = false || !!document.documentMode;
     const isEdge = !isIE && !!window.StyleMedia;
 
-    this.state = { scroll: 0, isFirefox, isEdge, isIE };
+    this.state = { scroll: 0, browser = (isFirefox && isEdge && isIE) };
   }
 
   componentDidMount() {
@@ -150,7 +150,7 @@ class Home extends React.Component {
               style={{ fontSize: "36px", color: "rgba(50, 50, 50,0)" }}
               name="arrow-down"
             />
-            {!this.state.isFirefox || !this.state.isEdge || !this.state.isIE ? (
+            {!this.state.browser ? (
               <svg
                 version="1.1"
                 id="Layer_1"
