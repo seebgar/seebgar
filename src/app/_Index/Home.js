@@ -11,7 +11,7 @@ class Home extends React.Component {
     const isIE = false || !!document.documentMode;
     const isEdge = !isIE && !!window.StyleMedia;
 
-    this.state = { scroll: 0, browser = (isFirefox && isEdge && isIE) };
+    this.state = { scroll: 0, browser : (isFirefox && isEdge && isIE) };
   }
 
   componentDidMount() {
