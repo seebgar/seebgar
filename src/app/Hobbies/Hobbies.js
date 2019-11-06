@@ -1,5 +1,4 @@
 import React from "react";
-import LazyLoad from "react-lazy-load";
 
 import NIGHT from "../../assets/BOG1.jpg";
 import GUITAR from "../../assets/Guitar.png";
