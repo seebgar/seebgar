@@ -8,10 +8,6 @@ import NES from "../../assets/NES.png";
 import PLANE from "../../assets/PLANE.png";
 import HP from "../../assets/HP.png";
 
-import EVEREST from "../../assets/AUDIO/EVEREST.mp3";
-import DEFILER from "../../assets/AUDIO/DEFILER.mp3";
-import MAC from "../../assets/AUDIO/MAC.mp3";
-
 import "./Hobbies.css";
 import Menu from "../Menu/Menu";
 
@@ -242,89 +238,9 @@ export default function Hobbies() {
 
       <br />
       <br />
-      <div className="uk-container  uk-container-small">
-        <div className="uk-child-width-1-1" data-uk-grid>
-          <div>
-            <h3 className="ProjectName" style={{ textAlign: "right" }}>
-              Music
-              <p
-                style={{
-                  textDecoration: "none",
-                  fontSize: "18px",
-                  color: "gray"
-                }}
-              >
-                playlist
-              </p>
-            </h3>
-          </div>
-          <div>
-            <LazyLoad debounce={false} offsetVertical={200} once>
-              <table class="uk-table">
-                <tbody>
-                  <tr>
-                    <td>
-                      <a
-                        href="https://youtu.be/kwrYDTHKxiE"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="MenuItem"
-                        style={{
-                          fontSize: "18px",
-                          color: "rgb(245, 245, 245)"
-                        }}
-                      >
-                        Mount Everest - Labrinth
-                      </a>
-                    </td>
-                    <td>
-                      <audio controls src={EVEREST} />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a
-                        href="https://youtu.be/N29-54dhVHg"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="MenuItem"
-                        style={{
-                          fontSize: "18px",
-                          color: "rgb(245, 245, 245)"
-                        }}
-                      >
-                        Weekend - Mac Miller
-                      </a>
-                    </td>
-                    <td>
-                      <audio controls src={MAC} />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a
-                        href="https://youtu.be/CGJAkyTgwi8"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="MenuItem"
-                        style={{
-                          fontSize: "18px",
-                          color: "rgb(245, 245, 245)"
-                        }}
-                      >
-                        Defiler - Stromae
-                      </a>
-                    </td>
-                    <td>
-                      <audio controls src={DEFILER} />
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </LazyLoad>
-          </div>
-        </div>
-      </div>
+      <br />
+      <br />
+    
     </div>
   );
 }
