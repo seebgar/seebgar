@@ -112,6 +112,16 @@ export default function About() {
             </div>
             <div>
               <a
+                href="https://vsco.co/seebgar/images"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ContactItem"
+              >
+                VSCO
+              </a>
+            </div>
+            <div>
+              <a
                 href="https://www.instagram.com/seebgar/"
                 target="_blank"
                 rel="noopener noreferrer"
