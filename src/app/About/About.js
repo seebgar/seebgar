@@ -100,6 +100,18 @@ export default function About() {
                 (+57) 320 805 1317
               </a>
             </div>
+            
+            <div>
+              <a
+                href="https://www.linkedin.com/in/seebgar/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ContactItem"
+              >
+                LinkedIn
+              </a>
+            </div>
+
             <div>
               <a
                 href="https://github.com/seebgar"
