@@ -28,7 +28,7 @@ body {
 }
 
 .MainTitle::after {
-  content: "201630047";
+  content: "v.202301";
   font-size: 12px;
   text-shadow: 0px 0px white;
   position: absolute;
@@ -53,23 +53,21 @@ body {
   }
 }
 
-
 #ArrowAnim {
   animation: arrowanim 6s ease 0s infinite alternate; /*name duration timing delay iteration direction*/
 }
 
 @keyframes arrowanim {
   0% {
-    transform: translatey(0px)
+    transform: translatey(0px);
   }
   50% {
-    transform: translateY(-30px)
+    transform: translateY(-30px);
   }
   100% {
-    transform: translatey(0px)
+    transform: translatey(0px);
   }
 }
-
 
 .MainContainer {
   margin-top: -15vh;
@@ -92,7 +90,6 @@ body {
   height: 100%;
 }
 
-
 .Content {
   min-height: 70vh;
 }
@@ -103,7 +100,6 @@ body {
   color: var(--bg-light);
   font-size: 88px;
   position: absolute;
-  top: 30%;
   left: -12%;
 }
 
@@ -148,8 +144,18 @@ body {
   font-size: 36px;
 }
 
+.ProjectNameRole {
+  font-family: "Inconsolata", sans-serif;
+  color: var(--bg-light);
+  text-align: left;
+  font-size: 22px;
+}
+
 .ProjectText {
   font-size: 22px;
   text-align: left;
   line-height: 2em;
+  white-space: pre-line;
+  text-align: justify;
+  text-justify: inter-word;
 }

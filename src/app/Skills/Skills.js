@@ -34,7 +34,7 @@ export default function Skills() {
           className="BaseCard"
           style={{
             backgroundImage:
-              "url(https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)"
+              "url(https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
           }}
           data-uk-parallax="bgy: 150"
         >
@@ -56,23 +56,13 @@ export default function Skills() {
             <h3 className="ProjectName">Back-end</h3>
           </div>
           <div className="uk-child-width-1-3" data-uk-grid>
+            <p className="ProjectText">Java</p>
             <p className="ProjectText">Python</p>
-            <p className="ProjectText">Java EE</p>
             <p className="ProjectText">C#</p>
-            <p className="ProjectText">C++</p>
-            <p className="ProjectText">Node</p>
-            <p className="ProjectText">.Net</p>
-            <p className="ProjectText" style={{ lineHeight: "1em" }}>
-              Oracle SQL Dev
-            </p>
-            <p className="ProjectText">MongoDB</p>
-            <p className="ProjectText">Firebase</p>
-            <p
-              className="ProjectText uk-width-1-1"
-              style={{ lineHeight: "1em" }}
-            >
-              Software development with SCRUM Agile methodologies
-            </p>
+            <p className="ProjectText">SQL</p>
+            <p className="ProjectText">NoSQL</p>
+            <p className="ProjectText">AWS</p>
+            <p className="ProjectText">Azure</p>
           </div>
         </div>
       </div>
@@ -87,7 +77,7 @@ export default function Skills() {
           className="BaseCard"
           style={{
             backgroundImage:
-              "url(https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500)"
+              "url(https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500)",
           }}
           data-uk-parallax="bgy: 150"
         >
@@ -109,15 +99,12 @@ export default function Skills() {
             <h3 className="ProjectName">Front-end</h3>
           </div>
           <div className="uk-child-width-1-3" data-uk-grid>
-            <p className="ProjectText">Django</p>
             <p className="ProjectText">React</p>
             <p className="ProjectText">Angular</p>
-            <p className="ProjectText">Javascript</p>
-            <p className="ProjectText">Typescript</p>
+            <p className="ProjectText">JavaScript</p>
             <p className="ProjectText">HTML</p>
             <p className="ProjectText">CSS</p>
-            <p className="ProjectText">SASS</p>
-            <p className="ProjectText">LESS</p>
+            <p className="ProjectText">Flutter</p>
           </div>
         </div>
       </div>
@@ -132,7 +119,7 @@ export default function Skills() {
           className="BaseCard"
           style={{
             backgroundImage:
-              "url(https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)"
+              "url(https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
           }}
           data-uk-parallax="bgy: 150"
         >
@@ -151,15 +138,15 @@ export default function Skills() {
       <div className="uk-container  uk-container-small">
         <div className="uk-child-width-1-1 uk-child-width-1-2@m" data-uk-grid>
           <div>
-            <h3 className="ProjectName">Mobile</h3>
+            <h3 className="ProjectName">Other</h3>
           </div>
           <div className="uk-child-width-1-3" data-uk-grid>
-            <p className="ProjectText" style={{ lineHeight: "1em" }}>
-              React Native
-            </p>
-            <p className="ProjectText">Swift</p>
-            <p className="ProjectText">SwiftUI</p>
-            {/* <p className="ProjectText">Kotlin</p> soon */}
+            <p className="ProjectText">CI/CD</p>
+            <p className="ProjectText">Containers</p>
+            <p className="ProjectText">Servers</p>
+            <p className="ProjectText">Logging</p>
+            <p className="ProjectText">Monitoring</p>
+            <p className="ProjectText">AI</p>
           </div>
         </div>
       </div>
@@ -174,7 +161,7 @@ export default function Skills() {
           className="BaseCard"
           style={{
             backgroundImage:
-              "url(https://images.unsplash.com/photo-1502209877429-d7c6df9eb3f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=2547&q=80)"
+              "url(https://images.unsplash.com/photo-1502209877429-d7c6df9eb3f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=2547&q=80)",
           }}
           data-uk-parallax="bgy: 150"
         >

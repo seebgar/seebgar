@@ -75,11 +75,16 @@ export default function Education() {
       <div className="uk-flex uk-flex-center uk-flex-middle Content">
         <div
           className="BaseCard"
-          style={{ backgroundImage: "url(" + ARQUI + ")" }}
+          style={{
+            backgroundImage:
+              "linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(" +
+              ARQUI +
+              ")",
+          }}
           data-uk-parallax="bgy: -50"
         >
           <h1 data-uk-parallax="y: -50; easing: 2" id="CardName">
-            minor
+            certificates
           </h1>
         </div>
       </div>
@@ -88,19 +93,13 @@ export default function Education() {
       <div className="uk-container  uk-container-small">
         <div className="uk-child-width-1-1 uk-child-width-1-2@m" data-uk-grid>
           <div>
-            <h3 className="ProjectName">
-              Universidad de
-              <br />
-              Los Andes
-            </h3>
+            <h3 className="ProjectName">Coursera</h3>
           </div>
           <div>
             <p className="ProjectText">
-              <strong>Design</strong>
+              <strong>Deep Learning AI</strong>
               <br />
-              Bogotá, Colombia
-              <br />
-              August 2016 - January 2021
+              Neural Networks and Deep Learning
             </p>
           </div>
         </div>
@@ -116,7 +115,7 @@ export default function Education() {
           className="BaseCard"
           style={{
             backgroundImage:
-              "url(https://images.pexels.com/photos/256541/pexels-photo-256541.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)"
+              "url(https://images.pexels.com/photos/256541/pexels-photo-256541.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
           }}
         >
           <h1 data-uk-parallax="y: -50; easing: 2" id="CardName">

@@ -42,7 +42,7 @@ export default function Hobbies() {
           className="BaseCard HobbieCard"
           style={{
             backgroundImage:
-              "url(https://images.pexels.com/photos/811838/pexels-photo-811838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)"
+              "url(https://images.pexels.com/photos/811838/pexels-photo-811838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
           }}
           data-uk-parallax="bgy: 150"
         >
@@ -85,7 +85,7 @@ export default function Hobbies() {
           className="BaseCard HobbieCard"
           style={{
             backgroundImage:
-              "url(https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2551&q=80)"
+              "url(https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2551&q=80)",
           }}
           data-uk-parallax="bgy: 50; easing: 1"
         >
@@ -128,7 +128,7 @@ export default function Hobbies() {
           className="BaseCard HobbieCard"
           style={{
             backgroundImage:
-              "url(https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)"
+              "url(https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
           }}
           data-uk-parallax="bgy: 150; easing: 1"
         >
@@ -171,7 +171,7 @@ export default function Hobbies() {
           className="BaseCard HobbieCard"
           style={{
             backgroundImage:
-              "url(https://images.pexels.com/photos/2105785/pexels-photo-2105785.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)"
+              "url(https://images.pexels.com/photos/2105785/pexels-photo-2105785.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
           }}
           data-uk-parallax="bgy: 150; easing: 1.6"
         >
@@ -214,7 +214,7 @@ export default function Hobbies() {
           className="BaseCard HobbieCard"
           style={{
             backgroundImage:
-              "url(https://images.pexels.com/photos/63703/pexels-photo-63703.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)"
+              "url(https://images.pexels.com/photos/63703/pexels-photo-63703.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
           }}
           data-uk-parallax="bgy: 150; easing: 1.6"
         >
@@ -234,12 +234,22 @@ export default function Hobbies() {
           />
         </div>
       </div>
+      <br />
+      <br />
+      <div className="uk-container  uk-container-small">
+        <div className="uk-child-width-1-1" data-uk-grid>
+          <div>
+            <h3 className="ProjectName" style={{ textAlign: "right" }}>
+              Audiophile
+            </h3>
+          </div>
+        </div>
+      </div>
 
       <br />
       <br />
       <br />
       <br />
-    
     </div>
   );
 }

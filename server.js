@@ -1,20 +1,19 @@
-
 const express = require("express");
 const path = require("path");
 
 var app = express();
-const PORT = normalizePort(process.env.PORT || "5000");
+const PORT = normalizePort(process.env.PORT || "8080");
 
-app
-  .use(express.json())
-  .use(express.urlencoded({ extended: false }))
+app.use(express.json()).use(express.urlencoded({ extended: false }));
 
 /**
  * * Front React
  */
 app
   .use(express.static(path.join(__dirname, "./build")))
-  .get("*", (req, res) => res.sendFile(path.join(__dirname,'./build/index.html')));
+  .get("*", (req, res) =>
+    res.sendFile(path.join(__dirname, "./build/index.html"))
+  );
 
 /**
  * Listen
@@ -35,6 +34,3 @@ function normalizePort(val) {
   }
   return false;
 }
-
-
-

@@ -7,56 +7,48 @@ export default function Footer() {
     <footer style={{ padding: "4em" }}>
       <div className="uk-grid-divider uk-text-center" data-uk-grid>
         <div className="uk-width-1-1@s uk-width-1-3@m uk-width-1-3@l">
-          <NavLink to="/home" activeClassName="ItemSelected">
+          <NavLink to="/home" activeclassname="ItemSelected">
             <p className="FooterMenuItem">Home</p>
           </NavLink>
-          <NavLink to="/about" activeClassName="ItemSelected">
+          <NavLink to="/about" activeclassname="ItemSelected">
             <p className="FooterMenuItem">About</p>
           </NavLink>
-          <NavLink to="/projects" activeClassName="ItemSelected">
+          <NavLink to="/projects" activeclassname="ItemSelected">
             <p className="FooterMenuItem">Projects</p>
           </NavLink>
-          <NavLink to="/hobbies" activeClassName="ItemSelected">
+          <NavLink to="/hobbies" activeclassname="ItemSelected">
             <p className="FooterMenuItem">Hobbies</p>
           </NavLink>
-          <NavLink to="/education" activeClassName="ItemSelected">
+          <NavLink to="/education" activeclassname="ItemSelected">
             <p className="FooterMenuItem">Education</p>
           </NavLink>
-          <NavLink to="/experience" activeClassName="ItemSelected">
+          <NavLink to="/experience" activeclassname="ItemSelected">
             <p className="FooterMenuItem">Experience</p>
           </NavLink>
-          <NavLink to="/skills" activeClassName="ItemSelected">
+          <NavLink to="/skills" activeclassname="ItemSelected">
             <p className="FooterMenuItem">Skills</p>
           </NavLink>
         </div>
         <div className="uk-width-1-1@s uk-width-1-3@m uk-width-1-3@l">
-          <p className="FooterMenuItem">js.garcial1@uniandes.edu.co</p>
-          <p className="FooterMenuItem">+57 (320) 805 1317</p>
+          <p className="FooterMenuItem">sebastian.garcialopez@outlook.com</p>
+          <p className="FooterMenuItem">+57 (304) 422 9118</p>
           <p className="FooterMenuItem">
-          Github @&nbsp; 
-          <a
-                href="https://github.com/seebgar"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{color: 'white'}}
-              >
-                seebgar
-              </a></p>
-          <p className="FooterMenuItem">
-          Instagram @&nbsp; 
-          <a
-                href="https://www.instagram.com/seebgar/"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{color: 'white'}}
-              >
-                seebgar
-              </a>
+            Github @&nbsp;
+            <a
+              href="https://github.com/seebgar"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "white" }}
+            >
+              seebgar
+            </a>
           </p>
           <br />
           <br />
           <p className="FooterMenuItem">
-            Born &amp; Raised<br/>Bogotá
+            Born &amp; Raised
+            <br />
+            Bogotá
           </p>
         </div>
         <div className="uk-width-1-1@s uk-width-1-3@m uk-width-1-3@l">
@@ -67,7 +59,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-          <p className="FooterMenuItem">Bubbles Animation</p>
+            <p className="FooterMenuItem">Bubbles Animation</p>
           </a>
           <a
             href="https://github.com/facebook/create-react-app"
@@ -75,20 +67,20 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-          <p className="FooterMenuItem">Create React App</p>
+            <p className="FooterMenuItem">Create React App</p>
           </a>
         </div>
 
         <div className="uk-width-1-1">
-        <a
+          <a
             href="https://github.com/seebgar/seebgar.git"
             id="Location"
             target="_blank"
             rel="noopener noreferrer"
           >
-          <p className="FooterMenuItem">
-          &lt;&gt; source code &lt;&frasl;&gt;
-          </p>
+            <p className="FooterMenuItem">
+              &lt;&gt; source code &lt;&frasl;&gt;
+            </p>
           </a>
         </div>
       </div>

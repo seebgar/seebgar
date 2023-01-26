@@ -76,9 +76,9 @@ export default function About() {
           >
             {/*  <!-- https://github.com/nkbt/react-copy-to-clipboard#usage --> */}
             <div>
-              <CopyToClipboard text="js.garcial1@uniandes.edu.co">
+              <CopyToClipboard text="sebastian.garcialopez@outlook.com">
                 <p className="ContactItem" style={{ cursor: "pointer" }}>
-                  <strong>js.garcial1@uniandes.edu.co</strong>
+                  <strong>sebastian.garcialopez@outlook.com</strong>
                   <br />
                   <span
                     className="uk-badge"
@@ -97,10 +97,10 @@ export default function About() {
                 rel="noopener noreferrer"
                 className="ContactItem"
               >
-                (+57) 320 805 1317
+                (+57) 304 422 9118
               </a>
             </div>
-            
+
             <div>
               <a
                 href="https://www.linkedin.com/in/seebgar/"
@@ -130,16 +130,6 @@ export default function About() {
                 className="ContactItem"
               >
                 VSCO
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.instagram.com/seebgar/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="ContactItem"
-              >
-                Instagram
               </a>
             </div>
             <br />

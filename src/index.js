@@ -4,15 +4,17 @@ import "./app/_Index/index.css";
 import App from "./app/_Index/App";
 import * as serviceWorker from "./serviceWorker";
 
-import './style.css'
+import "./style.css";
 
 import { BrowserRouter as Router } from "react-router-dom";
 
-ReactDOM.render(
+import { createRoot } from "react-dom/client";
+const container = document.getElementById("root");
+const root = createRoot(container); // createRoot(container!) if you use TypeScript
+root.render(
   <Router>
     <App />
-  </Router>,
-  document.getElementById("root")
+  </Router>
 );
 
 if (module.hot) {

@@ -13,11 +13,11 @@ export default class Menu extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0);
 
-    window.onscroll = function() {
-      if (window.pageYOffset > 400 ) {
-        this.setState({scroll: window.pageYOffset/1000})
+    window.onscroll = function () {
+      if (window.pageYOffset > 400) {
+        this.setState({ scroll: window.pageYOffset / 1000 });
       } else {
-        this.setState({scroll: 0})
+        this.setState({ scroll: 0 });
       }
     }.bind(this);
   }
@@ -29,23 +29,23 @@ export default class Menu extends React.Component {
   render() {
     return (
       <div className="uk-flex uk-flex-center MenuBar ">
-        <NavLink to="/home" activeClassName="ItemSelected">
+        <NavLink to="/home" activeclassname="ItemSelected">
           <p className="MenuItem">Home</p>
         </NavLink>
-        <NavLink to="/about" activeClassName="ItemSelected">
+        <NavLink to="/about" activeclassname="ItemSelected">
           <p className="MenuItem">About</p>
         </NavLink>
-        <NavLink to="/experience" activeClassName="ItemSelected">
+        <NavLink to="/experience" activeclassname="ItemSelected">
           <p className="MenuItem">Experience</p>
         </NavLink>
-        <NavLink to="/projects" activeClassName="ItemSelected">
+        <NavLink to="/projects" activeclassname="ItemSelected">
           <p className="MenuItem">Projects</p>
         </NavLink>
 
         <button
           id="MiniMenuOpener"
           data-uk-toggle="target: #offcanvas-nav-primary"
-          style={{opacity: this.state.scroll}}
+          style={{ opacity: this.state.scroll }}
         >
           <ion-icon name="menu" />
         </button>
@@ -56,25 +56,25 @@ export default class Menu extends React.Component {
             id="MenuOffCanvas"
           >
             <ul className="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-              <NavLink to="/home" activeClassName="ItemSelected">
+              <NavLink to="/home" activeclassname="ItemSelected">
                 <p className="MenuItem">Home</p>
               </NavLink>
-              <NavLink to="/about" activeClassName="ItemSelected">
+              <NavLink to="/about" activeclassname="ItemSelected">
                 <p className="MenuItem">About</p>
               </NavLink>
-              <NavLink to="/projects" activeClassName="ItemSelected">
+              <NavLink to="/projects" activeclassname="ItemSelected">
                 <p className="MenuItem">Projects</p>
               </NavLink>
-              <NavLink to="/hobbies" activeClassName="ItemSelected">
+              <NavLink to="/hobbies" activeclassname="ItemSelected">
                 <p className="MenuItem">Hobbies</p>
               </NavLink>
-              <NavLink to="/education" activeClassName="ItemSelected">
+              <NavLink to="/education" activeclassname="ItemSelected">
                 <p className="MenuItem">Education</p>
               </NavLink>
-              <NavLink to="/experience" activeClassName="ItemSelected">
+              <NavLink to="/experience" activeclassname="ItemSelected">
                 <p className="MenuItem">Experience</p>
               </NavLink>
-              <NavLink to="/skills" activeClassName="ItemSelected">
+              <NavLink to="/skills" activeclassname="ItemSelected">
                 <p className="MenuItem">Skills</p>
               </NavLink>
               <button
