@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 
 var app = express();
-const PORT = normalizePort(process.env.PORT || "8080");
+const PORT = normalizePort(process.env.PORT || "5000");
 
 app.use(express.json()).use(express.urlencoded({ extended: false }));
 
