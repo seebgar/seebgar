@@ -54,7 +54,7 @@ export const experiences = [
     id: "2uniandes",
     number: "05",
     color: "linear-gradient(45deg, #ff735f, #feb47b)",
-    title: "Universidad of the Andes",
+    title: "University of the Andes",
     sub: "Teaching Asistant",
     date: "Bogotá, August 2017 – December 2018",
     text: `-	Taught full-stack development and API design to students, providing them with a comprehensive understanding of software architecture, design, and development (Java, React).
