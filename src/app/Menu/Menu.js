@@ -1,92 +1,81 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
+import { fullMenuItems, menuItems } from "../constants/MenuItems";
 
 import "./Menu.css";
 
-import { NavLink } from "react-router-dom";
+const Menu = () => {
+  const [state, setState] = useState({ scroll: 0 });
+  const activeClass = "ItemSelected";
+  const inactiveClass = "";
 
-export default class Menu extends React.Component {
-  constructor(props) {
-    super(props);
+  const setClassActive = ({ isActive }) =>
+    isActive ? activeClass : inactiveClass;
 
-    this.state = { scroll: 0 };
-  }
-  componentDidMount() {
+  useEffect(() => {
     window.scrollTo(0, 0);
 
     window.onscroll = function () {
       if (window.pageYOffset > 400) {
-        this.setState({ scroll: window.pageYOffset / 1000 });
+        setState({ ...state, scroll: window.pageYOffset / 1000 });
       } else {
-        this.setState({ scroll: 0 });
+        setState({ ...state, scroll: 0 });
       }
-    }.bind(this);
-  }
+    };
 
-  componentWillUnmount() {
-    window.onscroll = null;
-  }
+    return () => {
+      window.onscroll = null;
+    };
+  }, []);
 
-  render() {
-    return (
-      <div className="uk-flex uk-flex-center MenuBar ">
-        <NavLink to="/home" activeclassname="ItemSelected">
-          <p className="MenuItem">Home</p>
-        </NavLink>
-        <NavLink to="/about" activeclassname="ItemSelected">
-          <p className="MenuItem">About</p>
-        </NavLink>
-        <NavLink to="/experience" activeclassname="ItemSelected">
-          <p className="MenuItem">Experience</p>
-        </NavLink>
-        <NavLink to="/projects" activeclassname="ItemSelected">
-          <p className="MenuItem">Projects</p>
-        </NavLink>
-
-        <button
-          id="MiniMenuOpener"
-          data-uk-toggle="target: #offcanvas-nav-primary"
-          style={{ opacity: this.state.scroll }}
+  return (
+    <div className="uk-flex uk-flex-center MenuBar">
+      {menuItems.map((item) => (
+        <NavLink
+          key={"shortmenu-" + item.label}
+          to={item.link}
+          className={setClassActive}
+          style={{ textDecorationColor: "white" }}
         >
-          <ion-icon name="menu" />
-        </button>
+          <p className="MenuItem">{item.label}</p>
+        </NavLink>
+      ))}
 
-        <div id="offcanvas-nav-primary" data-uk-offcanvas="overlay: true">
-          <div
-            className="uk-offcanvas-bar uk-flex uk-flex-column"
-            id="MenuOffCanvas"
-          >
-            <ul className="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-              <NavLink to="/home" activeclassname="ItemSelected">
-                <p className="MenuItem">Home</p>
+      <button
+        id="MiniMenuOpener"
+        data-uk-toggle="target: #offcanvas-nav-primary"
+        style={{ opacity: state.scroll }}
+      >
+        <ion-icon name="menu" />
+      </button>
+
+      <div id="offcanvas-nav-primary" data-uk-offcanvas="overlay: true">
+        <div
+          className="uk-offcanvas-bar uk-flex uk-flex-column"
+          id="MenuOffCanvas"
+        >
+          <ul className="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            {fullMenuItems.map((item) => (
+              <NavLink
+                key={"fullmenu-" + item.label}
+                to={item.link}
+                className={setClassActive}
+              >
+                <p className="MenuItem">{item.label}</p>
               </NavLink>
-              <NavLink to="/about" activeclassname="ItemSelected">
-                <p className="MenuItem">About</p>
-              </NavLink>
-              <NavLink to="/projects" activeclassname="ItemSelected">
-                <p className="MenuItem">Projects</p>
-              </NavLink>
-              <NavLink to="/hobbies" activeclassname="ItemSelected">
-                <p className="MenuItem">Hobbies</p>
-              </NavLink>
-              <NavLink to="/education" activeclassname="ItemSelected">
-                <p className="MenuItem">Education</p>
-              </NavLink>
-              <NavLink to="/experience" activeclassname="ItemSelected">
-                <p className="MenuItem">Experience</p>
-              </NavLink>
-              <NavLink to="/skills" activeclassname="ItemSelected">
-                <p className="MenuItem">Skills</p>
-              </NavLink>
-              <button
-                className="uk-offcanvas-close uk-close-large"
-                type="button"
-                style={{ color: "white" }}
-                data-uk-close
-              />
-            </ul>
-          </div>
+            ))}
+
+            <button
+              className="uk-offcanvas-close uk-close-large"
+              type="button"
+              style={{ color: "white" }}
+              data-uk-close
+            />
+          </ul>
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
+
+export default Menu;

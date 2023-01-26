@@ -94,6 +94,206 @@ textarea {
   display: none;
 }
 
+/* HOME */
+/* VARIABLES */
+:root {
+  --bg-dark: rgb(50, 50, 50);
+  --bg-light: rgb(245, 245, 245);
+
+  --pink: rgb(252, 40, 252);
+  --blue: rgb(45, 255, 254);
+  --yellow: rgb(255, 253, 56);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-dark);
+}
+
+/* ===================== */
+/* Home */
+/* ===================== */
+
+.HomeTitleContainer {
+  height: 100vh;
+}
+
+.MainTitle {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 90px;
+  text-shadow: 0px 0px white;
+  color: var(--bg-light);
+  position: relative;
+  animation: noise 6s ease 0s infinite alternate;
+  margin-bottom: 4rem;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.MainTitle::after {
+  content: "v.202301";
+  font-size: 12px;
+  text-shadow: 0px 0px white;
+  position: absolute;
+  bottom: -5px;
+  right: 5px;
+}
+
+@keyframes noise {
+  0% {
+    text-shadow: 1px 0px var(--pink);
+    transform: scale(1);
+  }
+  33% {
+    text-shadow: 0px -1px var(--blue);
+  }
+  66% {
+    text-shadow: -1px 0px var(--yellow);
+  }
+  100% {
+    text-shadow: 0px 0px var(--bg-light);
+    transform: scale(0.9);
+  }
+}
+
+#ArrowAnim {
+  animation: arrowanim 6s ease 0s infinite alternate;
+}
+
+@keyframes arrowanim {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.DownArrow {
+  display: "block";
+}
+
+.DownArrowInner {
+  height: "10vh";
+}
+
+.MainContainer {
+  margin-top: -15vh;
+  height: 95vh;
+}
+
+.MainContainerCardsSpace {
+  padding: 4em;
+  padding-top: 6em;
+}
+
+.MainCard {
+  background-color: var(--bg-light);
+  border-radius: 1em;
+  height: 200px;
+}
+
+.CardTitle {
+  font-size: 42px;
+  color: rgb(102, 102, 102);
+  font-family: "Inconsolata", sans-serif;
+  text-decoration: none;
+  margin-bottom: 0px;
+}
+
+.CardTitle:hover {
+  color: black;
+}
+
+.CardBody {
+  width: 100%;
+  height: 100%;
+}
+
+.Content {
+  min-height: 70vh;
+}
+
+#CardName,
+#CardNameContact {
+  font-family: "Inconsolata", sans-serif;
+  color: var(--bg-light);
+  font-size: 88px;
+  position: absolute;
+  left: -12%;
+  top: 220px;
+}
+
+#AnimojiCard,
+#ContactCard {
+  background-color: var(--bg-light);
+  border-radius: 1em;
+  min-height: 30vh;
+  width: 40%;
+  padding: 3em;
+}
+
+#IntroPic {
+  height: 30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#Intro {
+  font-family: "Inconsolata", sans-serif;
+  color: var(--bg-dark);
+  text-align: center;
+  font-size: 42px;
+}
+
+.ContactItem {
+  font-family: "Inconsolata", sans-serif;
+  font-size: 34px;
+  color: var(--bg-dark);
+  margin: 1em 0;
+}
+
+#Location {
+  font-size: 18px;
+}
+
+.ProjectName {
+  font-family: "Inconsolata", sans-serif;
+  color: var(--bg-light);
+  text-align: left;
+  font-size: 36px;
+}
+
+.ProjectNameRole {
+  font-family: "Inconsolata", sans-serif;
+  color: var(--bg-light);
+  text-align: left;
+  font-size: 22px;
+}
+
+.ProjectText {
+  font-size: 22px;
+  text-align: left;
+  line-height: 2em;
+  white-space: pre-line;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 /* ==========================================================================  */
 
 a:hover {
@@ -137,6 +337,11 @@ a:hover {
   font-size: 26px;
   margin-right: 3em;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--bg-light);
 }
 
 .ItemSelected {
@@ -257,10 +462,6 @@ footer {
 .FooterMenuItem {
   color: var(--bg-light);
   text-decoration: none;
-}
-
-#HomeMobileBottomMargin {
-  height: 30vh;
 }
 
 @media only screen and (min-width: 960px) and (max-width: 1300px) {

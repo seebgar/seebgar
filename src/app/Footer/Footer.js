@@ -1,33 +1,28 @@
 import React from "react";
-
 import { NavLink } from "react-router-dom";
+import { fullMenuItems } from "../constants/MenuItems";
 
-export default function Footer() {
+const Footer = () => {
+  const activeClass = "ItemSelected";
+  const inactiveClass = "";
+
+  const setClassActive = ({ isActive }) =>
+    isActive ? activeClass : inactiveClass;
+
   return (
     <footer style={{ padding: "4em" }}>
       <div className="uk-grid-divider uk-text-center" data-uk-grid>
         <div className="uk-width-1-1@s uk-width-1-3@m uk-width-1-3@l">
-          <NavLink to="/home" activeclassname="ItemSelected">
-            <p className="FooterMenuItem">Home</p>
-          </NavLink>
-          <NavLink to="/about" activeclassname="ItemSelected">
-            <p className="FooterMenuItem">About</p>
-          </NavLink>
-          <NavLink to="/projects" activeclassname="ItemSelected">
-            <p className="FooterMenuItem">Projects</p>
-          </NavLink>
-          <NavLink to="/hobbies" activeclassname="ItemSelected">
-            <p className="FooterMenuItem">Hobbies</p>
-          </NavLink>
-          <NavLink to="/education" activeclassname="ItemSelected">
-            <p className="FooterMenuItem">Education</p>
-          </NavLink>
-          <NavLink to="/experience" activeclassname="ItemSelected">
-            <p className="FooterMenuItem">Experience</p>
-          </NavLink>
-          <NavLink to="/skills" activeclassname="ItemSelected">
-            <p className="FooterMenuItem">Skills</p>
-          </NavLink>
+          {fullMenuItems.map((item) => (
+            <NavLink
+              key={"fullmenufot-" + item.label}
+              to={item.link}
+              className={setClassActive}
+              style={{ textDecorationColor: "white" }}
+            >
+              <p className="FooterMenuItem">{item.label}</p>
+            </NavLink>
+          ))}
         </div>
         <div className="uk-width-1-1@s uk-width-1-3@m uk-width-1-3@l">
           <p className="FooterMenuItem">sebastian.garcialopez@outlook.com</p>
@@ -58,6 +53,7 @@ export default function Footer() {
             id="Location"
             target="_blank"
             rel="noopener noreferrer"
+            style={{ color: "white" }}
           >
             <p className="FooterMenuItem">Bubbles Animation</p>
           </a>
@@ -66,6 +62,7 @@ export default function Footer() {
             id="Location"
             target="_blank"
             rel="noopener noreferrer"
+            style={{ color: "white" }}
           >
             <p className="FooterMenuItem">Create React App</p>
           </a>
@@ -77,6 +74,7 @@ export default function Footer() {
             id="Location"
             target="_blank"
             rel="noopener noreferrer"
+            style={{ color: "white" }}
           >
             <p className="FooterMenuItem">
               &lt;&gt; source code &lt;&frasl;&gt;
@@ -86,4 +84,6 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;

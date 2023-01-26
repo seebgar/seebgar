@@ -3,7 +3,7 @@ import React from "react";
 import USAQ from "../../assets/ANDES1.jpg";
 
 import Menu from "../Menu/Menu";
-import { experiences } from "./Experiences";
+import { experiences } from "../constants/Experiences";
 
 export default function Experience() {
   const exps = (item) => (
@@ -21,9 +21,9 @@ export default function Experience() {
           }}
         >
           <h1
-            data-uk-parallax="y: -1; easing: 1"
+            data-uk-parallax="y: -100; easing: 1"
             id="CardName"
-            style={{ left: "-5%" }}
+            style={{ left: "-5%", top: "100px" }}
           >
             {item.number}
           </h1>

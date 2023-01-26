@@ -30,7 +30,7 @@ export const experiences = [
   {
     id: "1imagine",
     number: "03",
-    color: "linear-gradient(120deg, rgb(40, 50, 206), #fcffd1)",
+    color: "linear-gradient(45deg, #ff735f, #feb47b)",
     title: "Imagine Apps",
     sub: "Full-Stack Software Developer",
     date: "Bogotá, March 2020 – April 2021",
@@ -41,7 +41,7 @@ export const experiences = [
   {
     id: "1gl",
     number: "04",
-    color: "linear-gradient(45deg, #ef32d9, #89fffd)",
+    color: "linear-gradient(45deg, #67B26F, #4ca2cd)",
     title: "G&L Consulting",
     sub: "Project Manager & Developer",
     date: "Bogotá, May 2019 – August 2019",
@@ -53,7 +53,7 @@ export const experiences = [
   {
     id: "2uniandes",
     number: "05",
-    color: "linear-gradient(45deg, #ff735f, #feb47b)",
+    color: "linear-gradient(45deg, #5860d4, #7cc5f3)",
     title: "University of the Andes",
     sub: "Teaching Asistant",
     date: "Bogotá, August 2017 – December 2018",

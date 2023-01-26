@@ -1,11 +1,6 @@
 import React from "react";
-//import logo from "./logo.svg";
 
-import "uikit/dist/css/uikit.min.css";
-import "uikit/dist/js/uikit.min.js";
-import "uikit/dist/js/uikit-icons.min.js";
-
-import { Route, Routes, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "./Home";
 import About from "../About/About";
 import Projects from "../Projects/Projects";
@@ -15,9 +10,11 @@ import Experience from "../Experience/Experience";
 import Skills from "../Skills/Skills";
 import Footer from "../Footer/Footer";
 
+import "./index.scss";
+
 function App() {
   return (
-    <div>
+    <>
       <Routes>
         <Route path="/home" element={<Home />} />
 
@@ -30,14 +27,11 @@ function App() {
         <Route path="/skills" element={<Skills />} />
 
         <Route exact path="/" element={<Home />} />
+        <Route path="*" element={() => <div>Not found</div>} />
       </Routes>
 
-      {/* ----------------- */}
-      {/* FOOTER */}
-      {/* ----------------- */}
-
       <Footer />
-    </div>
+    </>
   );
 }
 
