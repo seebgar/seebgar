@@ -78,7 +78,7 @@ export default function About() {
             <div>
               <CopyToClipboard text="sebastian.garcialopez@outlook.com">
                 <p className="ContactItem" style={{ cursor: "pointer" }}>
-                  <strong>sebastian.garcialopez@outlook.com</strong>
+                  <strong>email</strong>
                   <br />
                   <span
                     className="uk-badge"
@@ -92,7 +92,7 @@ export default function About() {
             </div>
             <div>
               <a
-                href="https://wa.me/573208051317"
+                href="https://wa.me/573044229118"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="ContactItem"
