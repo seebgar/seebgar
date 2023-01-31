@@ -3,7 +3,7 @@ import React from "react";
 import USAQ from "../../assets/images/ANDES1.jpg";
 
 import { Menu } from "../../_shared/index";
-import { experiences } from "../../constants/Experiences";
+import { experiences } from "../../_constants/index";
 
 export function Experience() {
   const exps = (item) => (

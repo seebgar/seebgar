@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { fullMenuItems, menuItems } from "../../constants/MenuItems";
-
-import "./Menu.css";
+import { fullMenuItems, menuItems } from "../../_constants/index";
+import "./Menu.scss";
 
 export const Menu = () => {
   const [state, setState] = useState({ scroll: 0 });

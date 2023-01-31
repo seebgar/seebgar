@@ -3,7 +3,7 @@
  * https://codepen.io/matchboxhero/pen/LzdgOv?editors=1100
  * @returns
  */
-const Bubbles = () => (
+export const Bubbles = () => (
   <div className="container">
     <div className="bubbles-container">
       <svg
@@ -96,5 +96,3 @@ const Bubbles = () => (
     </div>
   </div>
 );
-
-export default Bubbles;

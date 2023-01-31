@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 
-import Bubbles from "../../constants/Bubbles";
+import { Bubbles } from "../../_constants/index";
 import HomeSections from "./HomeSections";
 import HomeTitle from "./HomeTitle";
+import "./Home.scss";
 
 export const Home = () => {
   const [state, setState] = useState({ scroll: 0 });
@@ -36,7 +37,7 @@ export const Home = () => {
   return (
     <>
       <Bubbles />
-      <HomeTitle state={state} />
+      <HomeTitle />
       <HomeSections state={state} />
       <div id="HomeMobileBottomMargin">&nbsp;</div>
     </>

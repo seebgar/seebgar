@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { fullMenuItems } from "../../constants/MenuItems";
+import { fullMenuItems } from "../../_constants/MenuItems";
 
 export const Footer = () => {
   const activeClass = "ItemSelected";

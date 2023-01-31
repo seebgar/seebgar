@@ -237,6 +237,8 @@ body {
   top: 220px;
 }
 
+/* !!!! ====================== */
+
 #AnimojiCard,
 #ContactCard {
   background-color: var(--bg-light);

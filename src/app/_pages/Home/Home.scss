@@ -1,8 +1,76 @@
-// VARIABLES
-$pink: rgb(252, 40, 252); 
-$blue: rgb(45, 255, 254);
-$yellow: rgb(255, 253, 56);
+@use "../../_styles/colors.scss";
+@use "../../_styles/mixins.scss";
+@use "../../_styles/animations.scss";
 
+.HomeTitleContainer {
+  height: 100vh;
+  @include mixins.not-selectable;
+
+  .MainTitle {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 90px;
+    text-shadow: 0px 0px colors.$white;
+    color: colors.$bg-light;
+    position: relative;
+    animation: noise 6s ease 0s infinite alternate;
+    margin-bottom: 4rem;
+
+    &:after {
+      content: "v.202301";
+      font-size: 12px;
+      text-shadow: 0px 0px colors.$white;
+      position: absolute;
+      bottom: -5px;
+      right: 5px;
+    }
+  }
+
+  .DownArrow {
+    display: block;
+
+    #arrow-animation {
+      font-size: 24px;
+      animation: arrowanim 6s ease 0s infinite alternate;
+    }
+  }
+}
+
+.HomeSectionsContainer {
+  margin-top: -15vh;
+  height: 95vh;
+
+  .CardsSpacing {
+    padding: 4em;
+    padding-top: 6em;
+
+    .MainCard {
+      border-radius: 1em;
+      height: 180px;
+
+      .CardBody {
+        width: 100%;
+        height: 100%;
+
+        &:hover {
+          .CardTitle {
+            color: colors.$black;
+          }
+        }
+
+        .CardTitle {
+          font-size: 42px;
+          color: colors.$card-title;
+          font-family: "Inconsolata", sans-serif;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+// =================
+// Bubbles Animations
+// =================
 
 .bubbles-container {
   position: absolute;
@@ -20,16 +88,16 @@ $yellow: rgb(255, 253, 56);
   height: auto;
 
   circle {
-    stroke: $pink;
+    stroke: colors.$pink;
     fill: none;
   }
 
   > g > g:nth-of-type(3n) circle {
-    stroke: $blue;
+    stroke: colors.$blue;
   }
 
   > g > g:nth-of-type(4n) circle {
-    stroke: $yellow;
+    stroke: colors.$yellow;
   }
 }
 
@@ -263,15 +331,13 @@ $yellow: rgb(255, 253, 56);
   }
 }
 
-
 .DownArrow {
   position: absolute;
   bottom: 9em;
 }
 
-.st0 { 
-  fill: #EDEDED;
-  
+.st0 {
+  fill: #ededed;
 }
 
 #st1 {
@@ -279,8 +345,8 @@ $yellow: rgb(255, 253, 56);
 }
 
 @keyframes mouse {
-  0%, 20% {
-    
+  0%,
+  20% {
     opacity: 1;
   }
   100% {

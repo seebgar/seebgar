@@ -1,32 +1,32 @@
-import { AppConstants } from "./app.constants";
+import { AppEnum } from "../_enums/index";
 
 export const HomeNavigationCards = [
   [
     {
-      link: AppConstants.ABOUT_NAV,
-      label: AppConstants.ABOUT_LBL,
+      link: AppEnum.ABOUT_NAV,
+      label: AppEnum.ABOUT_LBL,
     },
     {
-      link: AppConstants.PROJECTS_NAV,
-      label: AppConstants.PROJECTS_LBL,
+      link: AppEnum.PROJECTS_NAV,
+      label: AppEnum.PROJECTS_LBL,
     },
     {
-      link: AppConstants.HOBBIES_NAV,
-      label: AppConstants.HOBBIES_LBL,
+      link: AppEnum.HOBBIES_NAV,
+      label: AppEnum.HOBBIES_LBL,
     },
   ],
   [
     {
-      link: AppConstants.EDUCATION_NAV,
-      label: AppConstants.EDUCATION_LBL,
+      link: AppEnum.EDUCATION_NAV,
+      label: AppEnum.EDUCATION_LBL,
     },
     {
-      link: AppConstants.EXPERIENCE_NAV,
-      label: AppConstants.EXPERIENCE_LBL,
+      link: AppEnum.EXPERIENCE_NAV,
+      label: AppEnum.EXPERIENCE_LBL,
     },
     {
-      link: AppConstants.SKILLS_NAV,
-      label: AppConstants.SKILLS_LBL,
+      link: AppEnum.SKILLS_NAV,
+      label: AppEnum.SKILLS_LBL,
     },
   ],
 ];

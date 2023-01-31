@@ -1,0 +1,45 @@
+@use "../../_styles/colors.scss";
+
+.MenuBar {
+  position: relative;
+  margin-top: 2rem;
+
+  #MenuOffCanvas {
+    width: 100%;
+  }
+
+  #MiniMenuOpener {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    position: fixed;
+    background-color: colors.$bg-dark;
+    text-decoration: none;
+    border: none;
+    color: colors.$gray;
+    font-size: 32px;
+    cursor: pointer;
+  }
+
+  .MenuBarSmall {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .MenuItemSmall {
+    color: colors.$white;
+    font-size: 46px;
+    text-decoration: none;
+  }
+
+  .MenuBar {
+    padding-top: 1em;
+  }
+
+  .MenuItem {
+    color: colors.$white;
+    font-size: 26px;
+    margin-right: 3em;
+    text-decoration: none;
+  }
+}
