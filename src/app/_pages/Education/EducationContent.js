@@ -3,13 +3,13 @@ import { EducationInfo } from "../../_constants/index";
 export const EducationContent = () => (
   <>
     {EducationInfo.map((item) => (
-      <>
+      <div key={item.id + "-divhead"}>
         <div
           key={item.id + "head"}
           className="
-    uk-flex uk-flex-center uk-flex-middle 
-    Content
-    "
+          uk-flex uk-flex-center uk-flex-middle 
+          Content
+          "
         >
           <div
             className="BaseCard"
@@ -50,7 +50,7 @@ export const EducationContent = () => (
             </p>
           </div>
         </div>
-      </>
+      </div>
     ))}
   </>
 );

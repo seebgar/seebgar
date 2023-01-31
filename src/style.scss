@@ -83,6 +83,18 @@ footer {
         position: absolute;
         left: -12%;
         top: 150px;
+
+        &-Number {
+          left: -4%;
+          top: 250px;
+        }
+      }
+
+      .FloatingImg {
+        height: 400px;
+        width: 400px;
+        object-fit: contain;
+        right: -70%;
       }
     }
   }
