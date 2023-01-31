@@ -1,16 +1,16 @@
 import React from "react";
 
-import COLORS from "../../assets/COLORS.JPG";
-import PMC from "../../assets/VIDEOS/PMC.mp4";
-import ARQ from "../../assets/VIDEOS/ARQUISOFT.mp4";
-import PIC from "../../assets/VIDEOS/PIC.mp4";
+import COLORS from "../../assets/images/COLORS.JPG";
+import PMC from "../../assets/videos/PMC.mp4";
+import ARQ from "../../assets/videos/ARQUISOFT.mp4";
+import PIC from "../../assets/videos/PIC.mp4";
 
-import TURYLATINA from "../../assets/TURYLATINA.jpg";
-import GL from "../../assets/GL.jpg";
+import TURYLATINA from "../../assets/images/TURYLATINA.jpg";
+import GL from "../../assets/images/GL.jpg";
 
-import Menu from "../Menu/Menu";
+import { Menu } from "../../_shared/index";
 
-export default function Projects() {
+export function Projects() {
   return (
     <div className="ContextContainer">
       <Menu />
@@ -38,21 +38,33 @@ export default function Projects() {
 
       <div className="uk-flex uk-flex-center uk-flex-middle Content">
         <div className="BaseCard uk-cover-container">
-          <video controls src={PMC} autoPlay loop muted playsInline data-uk-cover />
+          <video
+            controls
+            src={PMC}
+            autoPlay
+            loop
+            muted
+            playsInline
+            data-uk-cover
+          />
         </div>
       </div>
 
       <div className="uk-container  uk-container-small">
         <div className="uk-child-width-1-1" data-uk-grid>
           <div>
-            <h3 className="ProjectName" style={{textAlign: 'right'}}>
+            <h3 className="ProjectName" style={{ textAlign: "right" }}>
               Mid-Undergraduate Project
               <br />
               <a
                 href="https://youtu.be/r3LGmdqpiCE"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ textDecoration: "none", fontSize: "18px", color: 'gray' }}
+                style={{
+                  textDecoration: "none",
+                  fontSize: "18px",
+                  color: "gray",
+                }}
               >
                 view video
               </a>
@@ -68,21 +80,33 @@ export default function Projects() {
 
       <div className="uk-flex uk-flex-center uk-flex-middle Content">
         <div className="BaseCard uk-cover-container">
-          <video controls src={ARQ} autoPlay loop muted playsInline data-uk-cover />
+          <video
+            controls
+            src={ARQ}
+            autoPlay
+            loop
+            muted
+            playsInline
+            data-uk-cover
+          />
         </div>
       </div>
 
       <div className="uk-container  uk-container-small">
         <div className="uk-child-width-1-1" data-uk-grid>
           <div>
-            <h3 className="ProjectName" style={{textAlign: 'right'}}>
+            <h3 className="ProjectName" style={{ textAlign: "right" }}>
               Software Architecture Course Project
               <br />
               <a
                 href="https://youtu.be/XGjCAh689gc"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ textDecoration: "none", fontSize: "18px", color: 'gray' }}
+                style={{
+                  textDecoration: "none",
+                  fontSize: "18px",
+                  color: "gray",
+                }}
               >
                 view video
               </a>
@@ -106,14 +130,18 @@ export default function Projects() {
       <div className="uk-container  uk-container-small">
         <div className="uk-child-width-1-1" data-uk-grid>
           <div>
-            <h3 className="ProjectName" style={{textAlign: 'right'}}>
+            <h3 className="ProjectName" style={{ textAlign: "right" }}>
               G &amp; L Consulting Group
               <br />
               <a
                 href="https://youtu.be/XGjCAh689gc"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ textDecoration: "none", fontSize: "18px", color: 'gray' }}
+                style={{
+                  textDecoration: "none",
+                  fontSize: "18px",
+                  color: "gray",
+                }}
               >
                 visit website
               </a>
@@ -137,7 +165,7 @@ export default function Projects() {
       <div className="uk-container  uk-container-small">
         <div className="uk-child-width-1-1" data-uk-grid>
           <div>
-            <h3 className="ProjectName" style={{textAlign: 'right'}}>
+            <h3 className="ProjectName" style={{ textAlign: "right" }}>
               Turylatina Project
               <br />
             </h3>
@@ -159,7 +187,7 @@ export default function Projects() {
       <div className="uk-container  uk-container-small">
         <div className="uk-child-width-1-1" data-uk-grid>
           <div>
-            <h3 className="ProjectName" style={{textAlign: 'right'}}>
+            <h3 className="ProjectName" style={{ textAlign: "right" }}>
               Piccolo Branding
               <br />
             </h3>
@@ -167,7 +195,6 @@ export default function Projects() {
         </div>
       </div>
       <div style={{ height: "20vh" }}>&nbsp;</div>
-
     </div>
   );
 }

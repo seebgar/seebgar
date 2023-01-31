@@ -1,12 +1,12 @@
 import React from "react";
 
-import ANDES from "../../assets/ANDES.jpg";
-import UNIANDES from "../../assets/UNIANDES.jpg";
-import ARQUI from "../../assets/ARQUI.jpg";
+import ANDES from "../../assets/images/ANDES.jpg";
+import UNIANDES from "../../assets/images/UNIANDES.jpg";
+import ARQUI from "../../assets/images/ARQUI.jpg";
 
-import Menu from "../Menu/Menu";
+import { Menu } from "../../_shared/index";
 
-export default function Education() {
+export function Education() {
   return (
     <div className="ContextContainer">
       <Menu />

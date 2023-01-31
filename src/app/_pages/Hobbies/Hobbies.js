@@ -1,16 +1,16 @@
 import React from "react";
 
-import NIGHT from "../../assets/BOG1.jpg";
-import GUITAR from "../../assets/Guitar.png";
-import XBOX from "../../assets/XBOX.png";
-import NES from "../../assets/NES.png";
-import PLANE from "../../assets/PLANE.png";
-import HP from "../../assets/HP.png";
+import NIGHT from "../../assets/images/BOG1.jpg";
+import GUITAR from "../../assets/images/Guitar.png";
+import XBOX from "../../assets/images/XBOX.png";
+import NES from "../../assets/images/NES.png";
+import PLANE from "../../assets/images/PLANE.png";
+import HP from "../../assets/images/HP.png";
 
 import "./Hobbies.css";
-import Menu from "../Menu/Menu";
+import { Menu } from "../../_shared/index";
 
-export default function Hobbies() {
+export function Hobbies() {
   return (
     <div className="ContextContainer">
       <Menu />

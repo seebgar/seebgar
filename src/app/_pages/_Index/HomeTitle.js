@@ -1,5 +1,7 @@
+import { AppConstants } from "../../_constants/index";
+
 const HomeTitle = ({ state }) => {
-  const titleName = "sebastián garcía";
+  const titleName = AppConstants.PORTFOLIO_NAME;
 
   return (
     <div className="uk-flex uk-flex-center uk-flex-middle uk-flex uk-flex-column HomeTitleContainer">

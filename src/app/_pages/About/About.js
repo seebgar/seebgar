@@ -2,12 +2,12 @@ import React from "react";
 
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
-import BOG from "../../assets/BOG.jpg";
-import FACE from "../../assets/FACE.png";
-import NIGHT from "../../assets/NIGHT.JPG";
-import Menu from "../Menu/Menu";
+import BOG from "../../assets/images/BOG.jpg";
+import FACE from "../../assets/images/FACE.png";
+import NIGHT from "../../assets/images/NIGHT.JPG";
+import { Menu } from "../../_shared/index";
 
-export default function About() {
+export function About() {
   return (
     <div className="ContextContainer">
       {/* ---------- */}

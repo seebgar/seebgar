@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import homeCards from "../constants/HomeCards";
+import { HomeNavigationCards } from "../../_constants/index";
 
 const HomeSections = ({ state }) => {
   return (
@@ -14,7 +14,7 @@ const HomeSections = ({ state }) => {
         uk-grid="parallax: 350"
       >
         <div>
-          {homeCards[0].map((item) => (
+          {HomeNavigationCards[0].map((item) => (
             <div
               key={"carditem-" + item.label}
               className="uk-flex uk-flex-center uk-flex-middle uk-card uk-card-default uk-card-hover uk-card-body uk-grid-margin MainCard"
@@ -28,7 +28,7 @@ const HomeSections = ({ state }) => {
           ))}
         </div>
         <div>
-          {homeCards[1].map((item) => (
+          {HomeNavigationCards[1].map((item) => (
             <div
               key={"carditem-" + item.label}
               className="uk-flex uk-flex-center uk-flex-middle uk-card uk-card-default uk-card-hover uk-card-body uk-grid-margin MainCard"

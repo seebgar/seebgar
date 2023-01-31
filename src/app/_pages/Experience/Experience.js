@@ -1,11 +1,11 @@
 import React from "react";
 
-import USAQ from "../../assets/ANDES1.jpg";
+import USAQ from "../../assets/images/ANDES1.jpg";
 
-import Menu from "../Menu/Menu";
-import { experiences } from "../constants/Experiences";
+import { Menu } from "../../_shared/index";
+import { experiences } from "../../constants/Experiences";
 
-export default function Experience() {
+export function Experience() {
   const exps = (item) => (
     <div style={{ marginBottom: "8vh" }} key={item.id}>
       <div

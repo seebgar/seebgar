@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 
-import Bubbles from "../constants/Bubbles";
+import Bubbles from "../../constants/Bubbles";
 import HomeSections from "./HomeSections";
 import HomeTitle from "./HomeTitle";
 
-const Home = () => {
+export const Home = () => {
   const [state, setState] = useState({ scroll: 0 });
 
   useEffect(() => {
@@ -42,5 +42,3 @@ const Home = () => {
     </>
   );
 };
-
-export default Home;
