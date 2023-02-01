@@ -1,8 +1,3 @@
-/**
- * BUBBLES ANIMATION
- * https://codepen.io/matchboxhero/pen/LzdgOv?editors=1100
- * @returns
- */
 export const Bubbles = () => (
   <div className="container">
     <div className="bubbles-container">

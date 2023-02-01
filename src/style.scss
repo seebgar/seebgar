@@ -143,6 +143,10 @@ footer {
     text-align: justify;
     text-justify: inter-word;
   }
+
+  a.SectionText {
+    color: colors.$bg-light;
+  }
 }
 
 .ItemSelected {
