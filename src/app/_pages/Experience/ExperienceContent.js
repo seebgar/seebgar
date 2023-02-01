@@ -44,7 +44,9 @@ const ExperienceInfoItem = ({ item }) => {
         <div>
           <div>
             <p className="SectionText">
-              <strong>{item.sub}</strong>
+              <strong>
+                {item.sub} | {item.date}
+              </strong>
             </p>
           </div>
 
