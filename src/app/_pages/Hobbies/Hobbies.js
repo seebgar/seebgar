@@ -1,6 +1,5 @@
 import React from "react";
 
-import "./Hobbies.css";
 import { Menu } from "../../_shared/index";
 import { HobbiesHeader } from "./HobbiesHeader";
 import { HobbiesContent } from "./HobbiesContent";

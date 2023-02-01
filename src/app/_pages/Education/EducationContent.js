@@ -16,7 +16,10 @@ export const EducationContent = () => (
             style={{ backgroundImage: "url(" + item.bg + ")" }}
             data-uk-parallax="bgy: 150"
           >
-            <h1 data-uk-parallax="y: -200; easing: 0.5" className="CardName">
+            <h1
+              data-uk-parallax="y: -200; easing: 0.5"
+              className="CardName CardName-Education"
+            >
               {item.title}
             </h1>
           </div>

@@ -5,6 +5,12 @@
     }
   }
 
+  @if $breakpoint==phld {
+    @media only screen and (max-height: 37.5em) {
+      @content;
+    }
+  }
+
   @if $breakpoint==pd {
     @media only screen and (min-width: 37.5em) and (max-width: 60em) {
       @content;

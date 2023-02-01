@@ -47,10 +47,16 @@
 
   .DownArrow {
     display: block;
+    position: absolute;
+    bottom: 9em;
 
     #arrow-animation {
       font-size: 24px;
       animation: arrowanim 6s ease 0s infinite alternate;
+    }
+
+    @include utilities.mediaQuery(phld) {
+      bottom: 3em;
     }
   }
 }
@@ -349,11 +355,6 @@
     opacity: 0;
     transform: translateY(-1024px);
   }
-}
-
-.DownArrow {
-  position: absolute;
-  bottom: 9em;
 }
 
 .st0 {
