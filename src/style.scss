@@ -34,7 +34,7 @@ abbr[title] {
 }
 
 a {
-  :hover {
+  &:hover {
     text-decoration: underline;
     text-decoration-color: colors.$white;
   }
@@ -66,6 +66,10 @@ footer {
   .Content {
     min-height: 70vh;
 
+    &-Experience {
+      min-height: 45vh;
+    }
+
     .BaseCard {
       background-color: colors.$bg-dark;
       min-height: 50vh;
@@ -75,6 +79,10 @@ footer {
       background-size: cover;
       background-repeat: no-repeat;
       position: relative;
+
+      &-Experience {
+        min-height: 30vh;
+      }
 
       .CardName {
         font-family: "Inconsolata", sans-serif;
@@ -87,6 +95,10 @@ footer {
         &-Number {
           left: -4%;
           top: 250px;
+
+          &-Experience {
+            top: 80px;
+          }
         }
       }
 
@@ -142,6 +154,17 @@ footer {
     white-space: pre-line;
     text-align: justify;
     text-justify: inter-word;
+
+    &-LongText {
+      text-align: left;
+    }
+
+    &-Btn {
+      color: colors.$bg-light;
+      border-radius: 11px;
+      text-transform: lowercase;
+      margin-top: 2rem;
+    }
   }
 
   a.SectionText {

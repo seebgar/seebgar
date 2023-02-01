@@ -38,13 +38,6 @@ export const Footer = () => {
               seebgar
             </a>
           </p>
-          <br />
-          <br />
-          <p className="FooterMenuItem">
-            Born &amp; Raised
-            <br />
-            Bogotá
-          </p>
         </div>
 
         <div className="uk-width-1-1">

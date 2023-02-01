@@ -1,10 +1,10 @@
-export const experiences = [
+export const ExperienceInfo = [
   {
     id: "1scotia",
     number: "01",
     color: "linear-gradient(45deg, #5860d4, #7cc5f3)",
     title: "Scotiabank Technology",
-    sub: "Full-Stack Software Engineer",
+    sub: "Full-Stack Software Engineer | Bogotá, January 2022 - Present",
     date: "Bogotá, January 2022 - Present",
     text: `-	Lead developer of Scotiabank's AutoDirect automotive financing platform (C#, Java, React).
 -	Developed the taxes calculator microservice engine and integrated AutoDirect with the bank's financing adjudication system, resulting in the processing of over 500 applications per month.
