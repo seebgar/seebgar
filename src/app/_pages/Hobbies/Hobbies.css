@@ -1,19 +1,9 @@
-/* VARIABLES */
-:root {
-    --bg-dark: rgb(50, 50, 50);
-    --bg-light: rgb(245, 245, 245);
-  
-    --pink: rgb(252, 40, 252);
-    --blue: rgb(45, 255, 254);
-    --yellow: rgb(255, 253, 56);
-  }
+.FloatingImg {
+  position: relative;
+  right: -30em;
+  bottom: -5em;
+}
 
-  .FloatingImg {
-      position: relative;
-      right: -30em;
-      bottom: -5em;
-  }
-
-  .HobbieCard {
-      height: 70vh;
-  }
+.HobbieCard {
+  height: 70vh;
+}

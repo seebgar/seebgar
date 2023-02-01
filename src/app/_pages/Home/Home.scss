@@ -1,6 +1,7 @@
 @use "../../_styles/colors.scss";
 @use "../../_styles/mixins.scss";
 @use "../../_styles/animations.scss";
+@use "../../_styles/utilities.scss";
 
 .HomeTitleContainer {
   height: 100vh;
@@ -8,7 +9,6 @@
 
   .MainTitle {
     font-family: "Lexend Deca", sans-serif;
-    font-size: 90px;
     text-shadow: 0px 0px colors.$white;
     color: colors.$bg-light;
     position: relative;
@@ -17,11 +17,31 @@
 
     &:after {
       content: "v.202301";
-      font-size: 12px;
       text-shadow: 0px 0px colors.$white;
       position: absolute;
       bottom: -5px;
       right: 5px;
+    }
+
+    @include utilities.mediaQuery(ph) {
+      font-size: 42px;
+      &:after {
+        font-size: 8px;
+      }
+    }
+
+    @include utilities.mediaQuery(pd) {
+      font-size: 70px;
+      &:after {
+        font-size: 10px;
+      }
+    }
+
+    @include utilities.mediaQuery(dk) {
+      font-size: 90px;
+      &:after {
+        font-size: 12px;
+      }
     }
   }
 
@@ -37,7 +57,7 @@
 
 .HomeSectionsContainer {
   margin-top: -15vh;
-  height: 95vh;
+  min-height: 60vh;
 
   .CardsSpacing {
     padding: 4em;

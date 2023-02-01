@@ -10,6 +10,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: colors.$bg-dark;
+  overflow-x: hidden;
 }
 
 body {
@@ -50,7 +51,6 @@ video {
 }
 
 footer {
-  margin-top: 25vh;
   background: colors.$bg-footer;
   color: colors.$white;
   font-family: "Inconsolata", sans-serif;
@@ -62,6 +62,7 @@ footer {
   background-color: colors.$bg-dark;
   color: colors.$white;
   font-family: "Inconsolata", sans-serif;
+  margin-bottom: 10vh;
 
   .Content {
     min-height: 70vh;
@@ -87,7 +88,6 @@ footer {
       .CardName {
         font-family: "Inconsolata", sans-serif;
         color: colors.$bg-light;
-        font-size: 88px;
         position: absolute;
         left: -12%;
         top: 150px;
@@ -100,13 +100,36 @@ footer {
             top: 80px;
           }
         }
+
+        @include utilities.mediaQuery(ph) {
+          font-size: 36px;
+        }
+
+        @include utilities.mediaQuery(pd) {
+          font-size: 76px;
+        }
+
+        @include utilities.mediaQuery(dk) {
+          font-size: 88px;
+        }
       }
 
       .FloatingImg {
         height: 400px;
         width: 400px;
         object-fit: contain;
-        right: -70%;
+
+        @include utilities.mediaQuery(ph) {
+          right: -24%;
+        }
+
+        @include utilities.mediaQuery(pd) {
+          right: -40%;
+        }
+
+        @include utilities.mediaQuery(dk) {
+          right: -70%;
+        }
       }
     }
   }
@@ -120,43 +143,82 @@ footer {
 
     .ContactItem {
       font-family: "Inconsolata", sans-serif;
-      font-size: 28px;
       color: colors.$bg-dark;
       margin: 1em 0;
+
+      @include utilities.mediaQuery(ph) {
+        font-size: 16px;
+      }
+
+      @include utilities.mediaQuery(pd) {
+        font-size: 18px;
+      }
+
+      @include utilities.mediaQuery(dk) {
+        font-size: 22px;
+      }
     }
   }
 
   #AboutProfileIamge {
-    height: 30vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+
+    @include utilities.mediaQuery(ph) {
+      height: 15vh;
+    }
+
+    @include utilities.mediaQuery(pd) {
+      height: 25vh;
+    }
+
+    @include utilities.mediaQuery(dk) {
+      height: 30vh;
+    }
   }
 
   #AboutProfileDescription {
     font-family: "Inconsolata", sans-serif;
-    color: var(--bg-dark);
+    color: colors.$bg-dark;
     text-align: center;
-    font-size: 28px;
+
+    @include utilities.mediaQuery(ph) {
+      font-size: 16px;
+    }
+
+    @include utilities.mediaQuery(pd) {
+      font-size: 18px;
+    }
+
+    @include utilities.mediaQuery(dk) {
+      font-size: 22px;
+    }
   }
 
   .SectionTitle {
     font-family: "Inconsolata", sans-serif;
     color: colors.$bg-light;
     text-align: left;
-    font-size: 36px;
+    font-size: 34px;
     margin-bottom: 1rem;
   }
 
   .SectionText {
-    font-size: 22px;
     text-align: left;
     white-space: pre-line;
-    text-align: justify;
     text-justify: inter-word;
 
-    &-LongText {
-      text-align: left;
+    @include utilities.mediaQuery(ph) {
+      font-size: 16px;
+    }
+
+    @include utilities.mediaQuery(pd) {
+      font-size: 18px;
+    }
+
+    @include utilities.mediaQuery(dk) {
+      font-size: 22px;
     }
 
     &-Btn {
@@ -173,108 +235,14 @@ footer {
 }
 
 .ItemSelected {
-  text-decoration: underline solid white;
+  text-decoration: underline solid colors.$white;
 }
 
 .FooterMenuItem {
-  color: var(--bg-light);
+  color: colors.$bg-light;
   text-decoration: none;
 }
 
-@media only screen and (max-width: 960px) {
-  /* For mobile phones: */
-
-  #HomeMobileBottomMargin {
-    height: 90vh;
-  }
-
-  .MenuItem {
-    color: white;
-    font-size: 18px;
-    margin-right: 1em;
-  }
-
-  .MainTitle {
-    font-size: 45px;
-  }
-
-  /* ABOUT */
-
-  #Intro {
-    font-size: 26px;
-  }
-  #CardName,
-  #CardNameContact {
-    font-size: 58px;
-  }
-  .BaseCard,
-  .BaseCardColor {
-    min-height: 40vh;
-  }
-
-  #AnimojiCard,
-  #ContactCard {
-    width: 65%;
-  }
-  .ContactItem {
-    font-size: 18px;
-  }
-
-  /* HOBBIES */
-  .FloatingImg,
-  #MAC {
-    right: -5em;
-  }
-
-  .ExtraLg {
-    width: 220px;
-    right: -5em;
-  }
-
-  .HobbieCard {
-    height: 50vh;
-  }
-
-  /* EXPERIENCE */
-
-  .PERIS2 {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 960px) and (max-width: 1300px) {
-  /* For tablets: */
-
-  #HomeMobileBottomMargin {
-    height: 70vh;
-  }
-
-  .ContactItem {
-    font-size: 24px;
-  }
-
-  /* EXPERIENCE */
-
-  .PERIS2 {
-    display: none;
-  }
-  #MAC {
-    width: 450px;
-  }
-
-  /* HOBBIES */
-  .FloatingImg,
-  #MAC {
-    right: -13em;
-    width: 500px;
-  }
-
-  .ExtraLg {
-    width: 300px;
-    right: -26em;
-  }
-
-  .HobbieCard {
-    height: 50vh;
-  }
+.uk-container-small {
+  padding: 0 20px;
 }

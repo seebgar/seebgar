@@ -1,24 +1,62 @@
 @use "../../_styles/colors.scss";
+@use "../../_styles/utilities.scss";
 
 .MenuBar {
   position: relative;
   margin-top: 2rem;
+  gap: 3rem;
+
+  @include utilities.mediaQuery(ph) {
+    height: 0;
+    margin: 0;
+  }
 
   #MenuOffCanvas {
     width: 100%;
+
+    .close-btn {
+      color: colors.$light-gray;
+
+      @include utilities.mediaQuery(ph) {
+        top: 54px;
+        right: 20px;
+      }
+
+      @include utilities.mediaQuery(pd) {
+        top: 54px;
+        right: 20px;
+      }
+
+      @include utilities.mediaQuery(dk) {
+        top: 50px;
+        right: 50px;
+      }
+    }
   }
 
   #MiniMenuOpener {
     position: absolute;
-    right: 50px;
     top: 50px;
     position: fixed;
-    background-color: colors.$bg-dark;
+    background-color: transparent;
     text-decoration: none;
     border: none;
-    color: colors.$gray;
+    color: colors.$light-gray;
     font-size: 32px;
     cursor: pointer;
+
+    @include utilities.mediaQuery(ph) {
+      right: 20px;
+      opacity: 1;
+    }
+
+    @include utilities.mediaQuery(pd) {
+      right: 20px;
+    }
+
+    @include utilities.mediaQuery(dk) {
+      right: 50px;
+    }
   }
 
   .MenuBarSmall {
@@ -39,7 +77,12 @@
   .MenuItem {
     color: colors.$white;
     font-size: 26px;
-    margin-right: 3em;
     text-decoration: none;
+
+    &-TopBar {
+      @include utilities.mediaQuery(ph) {
+        display: none;
+      }
+    }
   }
 }

@@ -13,14 +13,23 @@ export const Menu = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    const { innerWidth } = window;
 
-    window.onscroll = function () {
-      if (window.pageYOffset > 400) {
-        setState({ ...state, scroll: window.pageYOffset / 1000 });
-      } else {
-        setState({ ...state, scroll: 0 });
-      }
-    };
+    if (innerWidth > 600) {
+      window.onscroll = function () {
+        setState((oldState) => {
+          const newState = { ...oldState };
+          if (window.pageYOffset > 400) {
+            newState.scroll = window.pageYOffset / 1000;
+          } else {
+            newState.scroll = 0;
+          }
+          return newState;
+        });
+      };
+    } else {
+      setState({ ...state, scroll: 1 });
+    }
 
     return () => {
       window.onscroll = null;
@@ -28,7 +37,12 @@ export const Menu = () => {
   }, []);
 
   return (
-    <div className="uk-flex uk-flex-center MenuBar">
+    <div
+      className="
+    uk-flex uk-flex-center
+    MenuBar
+    "
+    >
       {menuItems.map((item) => (
         <NavLink
           key={"shortmenu-" + item.label}
@@ -36,7 +50,7 @@ export const Menu = () => {
           className={setClassActive}
           style={{ textDecorationColor: "white" }}
         >
-          <p className="MenuItem">{item.label}</p>
+          <p className="MenuItem MenuItem-TopBar">{item.label}</p>
         </NavLink>
       ))}
 
@@ -50,7 +64,9 @@ export const Menu = () => {
 
       <div id="offcanvas-nav-primary" data-uk-offcanvas="overlay: true">
         <div
-          className="uk-offcanvas-bar uk-flex uk-flex-column"
+          className="
+          uk-offcanvas-bar uk-flex uk-flex-column
+          "
           id="MenuOffCanvas"
         >
           <ul className="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
@@ -65,9 +81,8 @@ export const Menu = () => {
             ))}
 
             <button
-              className="uk-offcanvas-close uk-close-large"
+              className="uk-offcanvas-close uk-close-large close-btn"
               type="button"
-              style={{ color: "white" }}
               data-uk-close
             />
           </ul>

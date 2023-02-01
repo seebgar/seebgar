@@ -39,7 +39,6 @@ export const Home = () => {
       <Bubbles />
       <HomeTitle />
       <HomeSections state={state} />
-      <div id="HomeMobileBottomMargin">&nbsp;</div>
     </>
   );
 };

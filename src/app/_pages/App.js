@@ -11,7 +11,6 @@ import {
 } from "./index";
 import { Footer } from "../_shared/index";
 
-import "./index.scss";
 import { AppEnum } from "../_enums/index";
 
 function App() {
